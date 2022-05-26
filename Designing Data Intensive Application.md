@@ -1,9 +1,9 @@
 # Designing Data Intensive Applications
 
 nowadays most applications are data-intensive and typically offer similar functionalities:  they store info in databases, use caches to speed up reads, filter using indexes; and can handle stream and batch processing. Unfortunately, systems have different end goals so applying a one size fits all approach to architecting just does not cut it. Understanding the important concerns with most software systems is a great place to start. These concerns are:
-- [reliability](#reliability)
-- [scalability](#scalability)
-- [maintainability](#maintainability)
+- [reliability](#reliability-)
+- [scalability](#scalability-)
+- [maintainability](#maintainability-)
 
 ## **Reliability-**
 >continuing to work correctly, even when things go wrong.
