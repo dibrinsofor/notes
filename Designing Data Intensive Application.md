@@ -5,9 +5,16 @@
 
 ***
 nowadays most applications are data-intensive and typically offer similar functionalities:  they store info in databases, use caches to speed up reads, filter using indexes; and can handle stream and batch processing. Unfortunately, systems have different end goals so applying a one size fits all approach to architecting just does not cut it. Understanding the important concerns with most software systems is a great place to start. These concerns are:
-- [reliability](#reliability-)
-- [scalability](#scalability-)
-- [maintainability](#maintainability-)
+- [Designing Data Intensive Applications](#designing-data-intensive-applications)
+  - [**Reliability-**](#reliability-)
+  - [**Scalability-**](#scalability-)
+  - [**Maintainability-**](#maintainability-)
+  - [**Relational Model vs Document Model**](#relational-model-vs-document-model)
+  - [**The Object-Relational Mismatch**](#the-object-relational-mismatch)
+  - [**Many-to-One and Many-to-Many Relationships**](#many-to-one-and-many-to-many-relationships)
+  - [**Are Document Databases Repeating History?**](#are-document-databases-repeating-history)
+    - [The Network Model](#the-network-model)
+    - [The Relational Model](#the-relational-model)
 
 ## **Reliability-**
 
@@ -99,25 +106,41 @@ taking these principles into account when architecting systems is necessary and 
 ***
 data models are an important aspect of developing software, they inform how we think about our solutions. Applications are built by layering these models one on the other. For example, 
 1. As an application developer, you look at people, organizations, goods, actions, money flows, sensors, etc. and model data in terms of objects or data structures, and APIs that manipulate those data structures. Those structures are often specific to your application.
-2. When you want to store those data structures, you express them in terms of a
-general-purpose data model, such as JSON or XML documents, tables in a rela‐
-tional database, or a graph model.
-3. The engineers who built your database software decided on a way of representing
-that JSON/XML/relational/graph data in terms of bytes in memory, on disk, or
-on a network. The representation may allow the data to be queried, searched,
-manipulated, and processed in various ways.
-4. On yet lower levels, hardware engineers have figured out how to represent bytes
-in terms of electrical currents, pulses of light, magnetic fields, and more.
+2. When you want to store those data structures, you express them in terms of a general-purpose data model, such as JSON or XML documents, tables in a relational database, or a graph model.
+3. The engineers who built your database software decided on a way of representing that JSON/XML/relational/graph data in terms of bytes in memory, on disk, or on a network. The representation may allow the data to be queried, searched, manipulated, and processed in various ways.
+4. On yet lower levels, hardware engineers have figured out how to represent bytes in terms of electrical currents, pulses of light, magnetic fields, and more.
 
 ## **Relational Model vs Document Model**
 | Rubrik      | Relational Model | Document Model |
 | ----------- | ----------- | -------------|
 | Year      | Mid 70s       | Early 2010s    |
-| Features      | Data is organized into relations (or tables), where each relation is an unordered collection of tuples (or rows).       |    |
-| Highlights   |  Hides implementation details behind a clean interface. Works beyond the scope of business data processing very well (is seen almost everywhere on the web today)  |              |
-| Champions      | SQL       |    |
-| Competitors      | Network model and the hierarchical model. (Object databases and XML databases)     |    |
-
+| Features      | Data is organized into relations (or tables), where each relation is an unordered collection of tuples (or rows)       | Refers to no technology in particular   |
+| Highlights   |  Hides implementation details behind a clean interface. Works beyond the scope of business data processing very well (is seen almost everywhere on the web today)  |   Greater scalability than relational model databases. Dynamic and expressive data models (not restrictive). Specialized query operations           |
+| Champions      | SQL       |  MongoDB  |
+| Competitors      | Network model and the hierarchical model. (Object databases and XML databases)     | Relational model   |
 
 >the NoSQL name started out as a twitter hashtag for a meetup on open source, distributed, nonrelational databases in 2009. It has since caught on and is now used to refer to non-SQL databases (or Not Only SQL).
+
+## **The Object-Relational Mismatch**
+
+>most applications are written in OOP languages which exposes an additional level of friction when data in the form of SQL (Relational) tables needs to be translated to objects in application code, and vice versa. The disconnect between the models is sometimes called an impedance mismatch.
+
+## **Many-to-One and Many-to-Many Relationships**
+
+if multiple system users will have the same input, you may be better off storing IDs to these entities --letting users pick options from a dropdown-- as opposed to entering strings as it makes the data more consistent, reduces ambiguity, allows for easier updates, improves searchability and supports localization.
+
+Unfortunately, normalizing data like this does not fit well into document models but works decently with relational models because joins are easy.
+
+## **Are Document Databases Repeating History?**
+
+many-to-many relationships and joins are not traditionally common with document and NoSQL databases. But the debate on how best to represent this type of relationship precedes NoSQL. IBM's Information Management System which used the hierachical data model (and shares some similarities to JSON) also ran into this issue. It worked efficiently with one-to-many relationships but made many-to-many relationahips difficult to work with. It did not support joins. The most prominent solutions to this issue are:
+
+- [The Network Model](#the-network-model)
+- [The relational Model (SQL)](#the-relational-model)
+
+### The Network Model
+
+### The Relational Model
+
+
 </details>
