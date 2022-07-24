@@ -11,7 +11,11 @@
 ## Papers
 * [Automatic Static Cost Analysis for Parallel Programs](http://www.cs.cmu.edu/~janh/assets/pdf/HoffmannS15.pdf) by **Jan Hoffmann** et al, 2015.
 * [Faster and Cheaper Serverless Computing on Harvested Resources]() by **Christina Delimitrou** et al, 2021.
-* [Paging and the address-translation problem](https://dl.acm.org/doi/pdf/10.1145/3409964.3461814) by **Abhishek Bhattacharjee** et al, 2021.
+* [Securing computer hardware using 3D integrated circuit (IC) technology and split manufacturing for obfuscation]() by **Siddharth Garg** et al, 2013.
+* [Securing the Internet of Things in the Age of Machine Learning and Software-Defined Networking]() by **Francesco Restuccia** et al, 2018.
+* [Blockchain for the Internet of Things: Present and Future]() by **Francesco Restuccia** et al, 2019.
+* [My SIM is Leaking My Data: Exposing Self-Login Privacy Breaches in Smartphones]() by **Francesco Restuccia** et al, 2020.
+* [System architecture for autonomous mobile manipulation of everyday objects in domestic environments]() by **Taskin Padir** et al, 2019.
 * [Quantifying the Design-Space Tradeoffs in Autonomous Drones](https://hparch.gatech.edu/papers/hadidi-asplos21-drone.pdf) by **Hyesoon Kim**, 2021.
 * [Location-enhanced Authentication using the IoT](https://www.portokalidis.net/files/icelus_acsac16.pdf) by **Georgios Portokalidis** et al, 2016.
 * [DATS: Data Containers for Web Applications](http://spark.ece.utexas.edu/pubs/ASPLOS-18-DATS.pdf) by **Mohit Tiwari** et al, 2018.
