@@ -70,4 +70,5 @@ Say we have some input like this `"if (5 > 10) {return "magic number go brrr";} 
 <!-- parser func - variable bindings,  . go interfaces - polymorphism-->
 
 Expressions and Statements
+> Debugging, debugging, debugging. Go is changing quickly, some of the things in this book just don't work.
 </details>
