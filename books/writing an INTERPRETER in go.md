@@ -4,7 +4,7 @@
 
 > There are a plethora of Compiler/Interpreter architectural styles -- tiny ones that do not bother parsing the code (or offload it to some 3rd party) all the way to more elaborate ones with advanced parsing and evaluation techniques (Think just-in-time (JIT) interpreters). The implementation in this book strikes a solid balance between both extremes by parsing the source code, building an abstract syntax tree out of it and then evaluating the tree. This style is commonly called the tree-walking interpreter.
 
-#### the inspired compiler (with a few tweaks) lives here: [Monkey language go ooh ooh ah ah]()
+#### the inspired compiler (with a few tweaks) lives here: [Monkey language go ooh ooh ah ah](https://github.com/dibrinsofor/interpreter)
 
 <details>
 <summary> Chapter 1: Lexing</summary>
@@ -71,4 +71,25 @@ Say we have some input like this `"if (5 > 10) {return "magic number go brrr";} 
 
 Expressions and Statements
 > Debugging, debugging, debugging. Go is changing quickly, some of the things in this book just don't work.
+
+> We're able to Parse Let and Return statements now. on to  expressions, next.
+
+Parsing expressions is not as straight forward as parsing statements (where we just glance through each statement from left to right), we have to consider things like `Operator precedence` and the fact that expressions can appear in any order and as many times as they like.
+
+> Operator precendence: we need to know what order to process operations in. that is, for an expression like `5 * 5 + 10` we would want to somehow represent it in our `AST` as `((5 * 5) + 10)`.
+
+To accomplish this, we adopt Vaughan Pratt's [Top Down Operator Precedence](https://tdop.github.io/), a  BNF grammar alternative. It combines the best properties of [Recursive Descent]() and [Floyd's Operator Precedence]()
+
+> We're able to parse Unary and Binary expressions now 
+
+<!--write post about pratt parsing implementation, explain what it is, why it isnt has not overtaken BNF and it's relation to recursive descent-->
+
+[crockford JS TDOP](http://crockford.com/javascript/tdop/tdop.html)
+[crafting interpreters](https://craftinginterpreters.com/parsing-expressions.html)
+[Bob Nystrom](https://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/)
+[Eli Bendersky's Pratt parser (talks about recursive descent)](https://eli.thegreenplace.net/2010/01/02/top-down-operator-precedence-parsing)
+[Pratt Parser](https://abarker.github.io/typped/pratt_parsing_intro.html)
+[matklad pp](https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html)
+
 </details>
+

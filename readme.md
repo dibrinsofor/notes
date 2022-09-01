@@ -1,8 +1,8 @@
 # euclid
 
-A somewhat comprehensive list, with learning notes, of academic papers and books I have read, want to read or am currently reading.  
+A somewhat comprehensive list, with learning notes, of academic papers and books I have read, am currently reading or plan to read.  
 
-This content is mostly focused on systems (Databases, Programming Languages, Computer Architecture and Embedded and IoT systems) and every so often, robotics.
+This content is mostly focused on ***computing systems*** and all her friends -- Databases, Programming Languages, Computer Architecture and Embedded and IoT systems.
 
 **This is nothing more than a _personal_ learning aid.**
 
@@ -15,5 +15,5 @@ This content is mostly focused on systems (Databases, Programming Languages, Com
 * [Read](papers%20I%20have%20read.md)
 * [Todo](todo.md)
 
-Inspired by [jeffrey-xiao](https://github.com/jeffrey-xiao/papers), [keyvanakbary](https://github.com/keyvanakbary/learning-notes) and [hellerve](https://github.com/hellerve/ptolemy)
+<!-- Inspired by [jeffrey-xiao](https://github.com/jeffrey-xiao/papers), [keyvanakbary](https://github.com/keyvanakbary/learning-notes) and [hellerve](https://github.com/hellerve/ptolemy) -->
 

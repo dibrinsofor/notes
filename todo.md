@@ -1,11 +1,14 @@
 # papers/books I want to read
 
 ## Books
-* [seneca - letters from a stoic](https://www.amazon.com/Letters-Penguin-Classics-Lucius-Annaeus/dp/0140442103) by **Penguin Classics**, ?.
-* [epictetus - discourse and selected writings](https://www.amazon.com/Discourses-Selected-Writings-Penguin-Classics/dp/0140449469) by **Penguin Classics**, ?.
+<!-- * [seneca - letters from a stoic](https://www.amazon.com/Letters-Penguin-Classics-Lucius-Annaeus/dp/0140442103) by **Penguin Classics**, ?.
+* [epictetus - discourse and selected writings](https://www.amazon.com/Discourses-Selected-Writings-Penguin-Classics/dp/0140449469) by **Penguin Classics**, ?. -->
 * [Let's go!!](https://lets-go.alexedwards.net/) by **Alex Edwards**, 2017.
 * [Distributed Algorithms](https://jukkasuomela.fi/da/) by **Jukka Suomela**, 2014.
 * [Red Book]() by **Peter Bailis**, **Joseph M. Hellerstein** and **Michael Stonebraker**, 1988.
+* [SWE Book](https://abseil.io/resources/swe-book/html/toc.html) curated by **Titus Winters**, **Tom Manshreck** and **Hyrum Wright**, 2020.
+* [Programming and Programming Languages](https://papl.cs.brown.edu/2020/) by **Shriram Krishnamurthi**, **Benjamin S. Lerner**, **Joe Gibbs Politz**, 2019.
+* [A Data-Centric Introduction to Computing](https://dcic-world.org/2022-08-28/index.html) by **Kathi Fisler**, **Shriram Krishnamurthi**, **Benjamin S. Lerner**, **Joe Gibbs Politz**, 2022.
 
 
 ## Papers
@@ -13,10 +16,6 @@
 * [Structured Languages](https://dl.acm.org/doi/10.1145/987305.987311) by **Leon Presser**, 1975.
 * [Automatic Static Cost Analysis for Parallel Programs](http://www.cs.cmu.edu/~janh/assets/pdf/HoffmannS15.pdf) by **Jan Hoffmann** et al, 2015.
 * [Faster and Cheaper Serverless Computing on Harvested Resources]() by **Christina Delimitrou** et al, 2021.
-* [Securing computer hardware using 3D integrated circuit (IC) technology and split manufacturing for obfuscation]() by **Siddharth Garg** et al, 2013.
-* [Securing the Internet of Things in the Age of Machine Learning and Software-Defined Networking]() by **Francesco Restuccia** et al, 2018.
-* [Blockchain for the Internet of Things: Present and Future]() by **Francesco Restuccia** et al, 2019.
-* [My SIM is Leaking My Data: Exposing Self-Login Privacy Breaches in Smartphones]() by **Francesco Restuccia** et al, 2020.
 * [System architecture for autonomous mobile manipulation of everyday objects in domestic environments]() by **Taskin Padir** et al, 2019.
 * [Quantifying the Design-Space Tradeoffs in Autonomous Drones](https://hparch.gatech.edu/papers/hadidi-asplos21-drone.pdf) by **Hyesoon Kim**, 2021.
 * [Location-enhanced Authentication using the IoT](https://www.portokalidis.net/files/icelus_acsac16.pdf) by **Georgios Portokalidis** et al, 2016.
