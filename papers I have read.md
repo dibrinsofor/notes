@@ -23,7 +23,7 @@
   This paper highlights privacy concerns for smartphone users, in Italy, whose carriers adopt a *[frictionless]()* self login feature. It also explores quite a number of countermeasures that can be taken to improve privacy, all with tradeoffs. Coletta et al present two heuristics to categorize said concerns: active (user's info can be read and modified) and passive attacks (user's info can only be read). The paper ends on a high note, suggesting the adoption of Captcha, a counter measure that is fairly unobtrusive. [Paper by Non Native English Speakers]
 
   Thoughts: How big is this Issue? it seems like it could be global issue. Also, is Captcha really that secure? can it curb this?
-* #### [Securing computer hardware using 3D integrated circuit (IC) technology and split manufacturing for obfuscation]() by **Siddharth Garg** et al, 2013.
+<!-- * #### [Securing computer hardware using 3D integrated circuit (IC) technology and split manufacturing for obfuscation]() by **Siddharth Garg** et al, 2013. -->
  
 * #### [Securing the Internet of Things in the Age of Machine Learning and Software-Defined Networking](https://ieeexplore.ieee.org/document/8377989) by **Francesco Restuccia** et al, 2018.
   As we continue to rely more and more on IoT devices, the topic of Security and Privacy will continue to pop-up and unlike with consumer software we cannot just push out security patches ad hoc. This paper proffers a taxonomy to categorize IoT threats outside of the inherited Internet threats and highlights unique research challenges in IoT secruity that need to be overcome to make future devices more secure.
