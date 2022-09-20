@@ -119,6 +119,44 @@ Collisions can happen, i.e different strings can get mapped to the same index an
 - Prevent Duplicates
 </details>
 
-<details open>
+<details>
 <summary>Chapter 6 Breadth-First Search</summary>
+
+BFS is great for finding the shortest paths between two things. It is considered an `0(V+E)` operation. 
+<!-- if you dey try reach the court at BCON, there are a bunch of routes you can take but applying BFS will return the route with the few paths or checkpoints. -->
+
+BFS can help:
+- find the shortest path from node A to node B
+- Discover whether a path exists between A & B, i.e searching for someone in your friend group who has a ball
+
+To tackle the friend example you would start by listing all your immediate friends with balls (`Difu, Kosi, Dagogo`) and once you ask someone if they have it then `fin` else get all their friends who may have balls and add them to your list and repeat the process till you've got a ball. This is how BFS works.
+
+> tl;dr - queues help the algorithm remember what node to search next.
+
+Queues are a FIFO (First In, First Out) Data structure used to implement BFS. Because of how queues work, they are the perfect data structure to use when we do not care about revisiting nodes, they can be used to avoid recursion. The queue keeps track of the locations remaining to be searched as opposed to needing a potentially large amount of processor stack space for a recursive solution.
+
+> When working with BFS problems consider modelling your problem in form of a graph before applying the PFS. 
+
+A graph is a data type used to model a set of connections. It is made up by a bunch of Nodes connected by Edges (or arcs). Graphs can be directed or indirected. indirected graphs just means the relationship between nodes goes both ways.
+
+A tree is a graph where no edges point back. It flows in one direction from the root node.
+
+</details>
+
+<details>
+<summary>Chapter 7 Dijkstra’s Algorithm</summary>
+
+BFS is great for finding the path with fewer segments (or edges) but once these edges get weighted, it's a different ball game. BFS won't account for the weights. 
+
+> A graph with weights is called a weighted graph. A graph without weights is called an unweighted graph.
+
+Dijkstra's algorithm is a more appropriate when looking for the most optimal path, it takes note of the weights to perform an `0(ElogV)` operation. Dijkstra's algo, however, only works with DAGs (directed acyclic graphs). 
+
+Also, once a problem involves -ve weights or some logic that will result in -ve weights Dijkstra's algo will not work. A more appropriate algo would be Bellman Ford Algorithm which works with negative weights and runs at `0(V*E)`.
+
+> Because Dijkstra's goal is to find the optimal path (not just any path), it, by definition, cannot work with negative weights, since it cannot find the optimal path.
+</details>
+
+<details open>
+<summary>Chapter 8 Greedy Algorithms</summary>
 </details>
